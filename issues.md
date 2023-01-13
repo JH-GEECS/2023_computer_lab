@@ -29,3 +29,13 @@
 	4. https://github.com/hypriot/image-builder-rpi/releases/download/v1.12.3/hypriotos-rpi-v1.12.3.img.zip
 	5. 최신버전에서는 yaml 작동 안함
 		1. https://www.joinc.co.kr/w/Site/System_management/NetworkConfiguration network 인터페이스 pi에서 직접 작성 필요
+***
+# lab 3
+1. python code 들여쓰기 문제, 들여쓰기 수정할 필요 있음
+
+***
+# lab 4
+1. GPIO Figure가 맞기는 한데, RPI 4 B용으로 개정 필요
+2. raspberry pi에 adafruit_dht repository 설치 시에 sudo python setup.py install로 해야함
+	1. 그러하지 않을 경우에 /.local/lib/python3.7/site-packages/에 설치 되어, python에서 module import를 할 수 없음
+	2. /usr/lib/python3.7/site-packages 즉 which python과 같은 경로로 지정되어야 함
